@@ -135,19 +135,11 @@
 		
 		function answer5(){
 			var mini = 0;
-			for(var k = 0; k < 232000000000; k = k+10){
-				for(var i = 1; i <= 20; i++){
-					if(k % i !== 0){
-						i = 0;
-						k= k+10;
-					}
-					if(i === 20 && k% i === 0){
-						mini = k;
-						break;
-					}
+			for(var k = 2; k < 232000000000; k++){
+				if(k%16 === 0 && k%9 === 0 && k%5 === 0 && k%7 === 0 && k%11 === 0 && k%13 === 0 && k%17 === 0 && k%19 === 0){
+					return k;
 				}
 			}
-			return mini;
 		}
 				
 		document.getElementById("Q1Button").onclick = function(){
