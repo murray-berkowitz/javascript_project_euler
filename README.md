@@ -1,3 +1,3 @@
 # Project Euler
 
-Currently solves problem 1 and 2, with 3 still being worked on
+Solves problem 1 and 2, and 3
